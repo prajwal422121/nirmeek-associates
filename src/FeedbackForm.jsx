@@ -9,7 +9,7 @@ import {
 import { useEffect, useState } from "react";
 import { adminDB, ref, push } from "./firebase";
 import "./FeedbackForm.css";
-import MainHeader from "./mainHeader";
+import MainHeader from "./MainHeader";
 import MainFooter from "./MainFooter";
 
 const FeedbackForm = () => {
