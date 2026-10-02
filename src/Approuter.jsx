@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import FeedbackForm from "./FeedbackForm";
 import Project from "./Project";
-import AboutUs from "./Aboutus";
+import AboutUs from "./AboutUs";
 
 // import Layout from "./pages/Layout";
 // import Home from "./pages/Home";
