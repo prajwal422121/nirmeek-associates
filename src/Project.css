@@ -1,0 +1,238 @@
+/* Base Styles */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+       
+      
+  }
+  
+  h1 {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+
+  }
+  
+  /* Project Sections */
+  .project-section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  /* Project Cards */
+  .project-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: url('./assets/cityscape-5543224.jpg');
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .completed .project-card {
+    border-left: 4px solid #27ae60;
+  }
+  
+  .status-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #27ae60;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+  
+  /* Consultation Section */
+  .consultation-item {
+    background: white;
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .client-header {
+    display: flex;
+    gap: 1rem;
+    padding-left: 2rem;
+
+    margin-bottom: 1rem;
+  }
+  
+  .service-details li {
+    margin-bottom: 0.5rem;
+    padding-left: 2rem;
+
+    color: #666;
+  }
+  
+  /* For Project Cards */
+  .subtitle23 {
+    font-size: 1rem; /* Increase size */
+    color: #555; /* Darker text */
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: normal;
+}
+
+  
+  /* For Consultation Cards */
+  .project-card {
+    background: white;
+    padding: 1.8rem; /* More padding */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .app-container {
+      padding: 1rem;
+    }
+  }
+  .client-address {
+    font-size: 0.9rem; /* Slightly larger for readability */
+    color: #444; /* Darker for better contrast */
+    font-weight: 500; /* Slight boldness to make it stand out */
+    letter-spacing: 0.3px; /* Slightly increased spacing */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  text-align: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+/* Project Card */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  min-height: 300px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Overlay */
+.card-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.project-card:hover .card-image-overlay {
+  opacity: 5;
+}
+
+/* Content */
+.card-content {
+  padding: 20px;
+  color: #333;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  transition: background 0.3s ease;
+}
+
+.project-card:hover .card-content {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Status Badge */
+.status-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* Project Number */
+.project-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+}
+

@@ -1,0 +1,900 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures consistent width/height calculations */
+}
+
+
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+    letter-spacing: 10.016px;
+    line-height: 32.4833px;
+    font-weight: 800;
+    text-align: start;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+   padding-top: 2rem;
+   padding-left: 2rem;
+    width: auto;
+}
+
+.titleContainer{
+  justify-content: center;
+  align-items: left;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 7vw;
+    letter-spacing: 0.5vw;
+    vertical-align: baseline;
+    line-height: 6vw;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+.subtitleContainer{
+  justify-content: center;
+ align-items: center;
+
+ display: flex;
+ width: 100vw;
+ height: 100vh;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;     
+    background-color: white; 
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .main {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative; /* Allow BackgroundSlider to work */
+}
+
+
+  .aboutUS{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 3.016px;
+    vertical-align: baseline;
+    font-weight: 400;
+    font-stretch: 100;
+    color: white;
+    line-height: 23.4833px;
+    padding-top: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding-top: 2rem;
+    padding-left: 2rem;
+     width: auto;
+  }
+
+  .Projects{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 3.016px;
+    font-weight: 400;
+    font-stretch: 100;
+    color: white;
+    line-height: 23.4833px;
+    padding-top: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding-top: 2rem;
+    padding-left: 2rem;
+     width: auto;
+
+  }
+
+  .navigate2{
+    display: flex; /* Aligns children in a row */
+  gap: 2rem; /* Adds space between items */
+  background-color: #2A3F54;
+  padding-bottom: 1rem;
+  }
+ 
+  
+  .title, .Projects, .aboutUS {
+    cursor: pointer;
+    transition: opacity 0.2s;
+    display: inline-block; /* Ensures they respect padding/margin */
+  }
+  
+  .Projects:hover, .aboutUS:hover {
+    opacity: 0.7;
+  }
+  .Slide2{
+    align-items: center;
+   justify-content: center;
+    display: flex;
+    height: auto;
+   width: 100vw;
+    padding-top: 6.6vmax;
+  padding-bottom: 6.6vmax;
+    margin: 0;             
+    background-color: #EBEADF; 
+    background-size: cover;
+  }
+
+  .title2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem; /* Start with a base size */
+    letter-spacing: 0.3rem; /* Adjust to relative units */
+    vertical-align: baseline;
+    height: auto;
+    font-weight: 500;
+    text-align: start;
+    color: black;
+    width: 100%; /* Ensure it adapts to its parent container */
+    line-height: 4vw;
+    padding-bottom: 2%;
+
+  }
+
+  .subtitle2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 0.1rem;
+    vertical-align: baseline;
+    font-weight: 400;
+    text-align: justify;
+    color: black;
+    line-height: 1.8vw;
+  }
+
+  .img2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      max-width: 100%;
+      height: auto;
+    width: 100vw;
+    height: 100vh;
+    padding: auto;
+  }
+
+  .info2{
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 100vw;
+    display: flex;
+    
+  }
+
+
+.Slide3{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;    
+}
+
+.title3{
+  display: flex;
+  padding-left: 2%;
+  
+
+}
+
+.info3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 0.5vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.ourService {
+  font-family: 'Raleway', sans-serif;
+  font-size: 6rem; /* 220px / 16px = 13.75rem */
+  line-height: 7.25rem; /* 180px / 16px = 11.25rem */
+  text-align: start;
+  letter-spacing: normal;
+  padding-bottom: 1rem;
+}
+
+.title, .subtitle, .aboutUS, .title2, .subtitle2 , .title3{
+  margin-bottom: 0;
+}
+
+.Slide4{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;             
+  background-color: #EBEADF; 
+  background: url('assets/conifers-1867371.jpg');
+  background-position: center center;  /* Positioning the background image */
+  background-repeat: no-repeat;        /* Ensure the image doesn't repeat */
+  background-size: cover;              /* Resize the image to cover the entire viewport */
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.title4{
+  font-family: 'Raleway', sans-serif;
+  font-size: 5vw;
+  color: white;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+
+.subtitle4{
+width: 100vw;
+height: 100vh;
+display: flex;
+font-family: 'Raleway', sans-serif;
+font-size: 1.5vw;
+color: white;
+align-items: center;
+justify-content:space-around;
+}
+
+.Slide5{
+  display: flex;
+    flex-direction: column;
+    margin: 0;         
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;    
+    background-color: white; 
+    background-size: cover;
+    background: url('assets/skyscraper-4340541.jpg') no-repeat center center fixed;
+    background-position: center center;  /* Positioning the background image */
+    background-repeat: no-repeat;        /* Ensure the image doesn't repeat */
+    background-size: cover;              /* Resize the image to cover the entire viewport */
+    background-attachment: fixed; 
+}
+body {
+  font-weight: 500; /* Medium weight */
+}
+.title11{
+  font-family: 'Raleway', sans-serif;
+  font-size: 7rem; /* 220px / 16px = 13.75rem */
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  line-height: 7.25rem; /* 180px / 16px = 11.25rem */
+  text-align: start;
+  letter-spacing: normal;
+  padding-bottom: 1rem;
+}
+
+.title12{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem; /* 220px / 16px = 13.75rem */
+  color: rgb(253, 253, 253);
+  font-weight: 500;
+  line-height: 7.25rem; /* 180px / 16px = 11.25rem */
+  text-align: start;
+  letter-spacing: normal;
+  padding-bottom: 1rem;
+}
+
+.Slide6title1 {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: 7rem; /* Adjust font size using rem for better scalability */
+  justify-content: center;
+  letter-spacing: 0.5vw; /* vw ensures responsiveness to viewport width */
+  vertical-align: baseline;
+  align-items: center;
+  line-height: 5rem; /* Adjust line height using rem */
+  font-weight: 500;
+  text-align: center;
+  padding-top: 10rem; /* Maintain rem for consistent spacing */
+  margin-bottom: 3rem; /* Changed to rem for consistency */
+  color: black;
+}
+
+img,
+svg {
+  vertical-align: middle;
+  background-color: #EBEADF;
+
+}
+.curvy-line {
+  width: 100px; /* Adjust width */
+  height: 8px; /* Adjust thickness */
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #000; /* Change color */
+  background-color: #EBEADF;
+}
+.Slide6title2{
+  font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 1.016px;
+    padding-left: 2rem;
+flex-wrap: wrap;
+padding-right: 2rem;
+    vertical-align: baseline;
+    font-weight: 500;
+    text-align: start;
+    color: black;
+    
+}
+
+.Slide6title3{
+  font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    line-height: 80.4833px;
+    letter-spacing: 1.016px;
+
+    vertical-align: baseline;
+    font-weight: 500;
+    text-align: end;
+    color: black;
+    padding-left: 1rem;
+    text-align: justify;
+
+}
+
+.typo{
+  font-family: "'Raleway', sans-serif";
+  font-size: 5rem;
+}
+
+.sub1{
+  display: flex;
+  flex-direction: row;
+}
+.sub111 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem; /* Using rem for better scalability */
+  line-height: 4.8rem; /* Converted to rem based on font size */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  margin-top: 8rem; /* Converted to rem for consistent spacing */
+  vertical-align: baseline;
+  font-weight: 700;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 2vw; /* vw for dynamic responsiveness */
+  margin-right: 2vw; /* vw for dynamic responsiveness */
+}
+
+
+.sub112 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  font-weight: 800;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 5vw; /* vw for dynamic responsiveness */
+}
+
+
+.sub113{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  text-align: start; /* Consolidated text-align */
+  width: 50vw;
+  padding: 2rem;
+  color: black;
+  text-align: justify;
+
+}
+
+.sub121{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem; /* Using rem for better scalability */
+  line-height: 4.8rem; /* Converted to rem based on font size */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  margin-top: 8rem; /* Converted to rem for consistent spacing */
+  vertical-align: baseline;
+  font-weight: 700;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 2vw; /* vw for dynamic responsiveness */
+  margin-right: 2vw; /* vw for dynamic responsiveness */
+}
+
+.sub122{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  font-weight: 800;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 5vw; /* vw for dynamic responsiveness */
+}
+
+.sub123{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  text-align: start; /* Consolidated text-align */
+  padding: 2rem;
+  color: black;
+  text-align: justify;
+  width: 50vw;
+
+
+}
+
+.sub131{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem; /* Using rem for better scalability */
+  line-height: 4.8rem; /* Converted to rem based on font size */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  margin-top: 8rem; /* Converted to rem for consistent spacing */
+  vertical-align: baseline;
+  font-weight: 700;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 2vw; /* vw for dynamic responsiveness */
+  margin-right: 2vw; /* vw for dynamic responsiveness */
+}
+
+.sub132{
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  font-weight: 800;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 3vw; /* vw for dynamic responsiveness */
+}
+
+.sub133{
+  font-family: 'Raleway', sans-serif;
+  width: 50vw;
+
+  font-size: 1.5rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  text-align: start; /* Consolidated text-align */
+  padding: 2rem;
+  text-align: justify;
+
+  color: black;
+}
+
+.sub211{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem; /* Using rem for better scalability */
+  line-height: 4.8rem; /* Converted to rem based on font size */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  margin-top: 8rem; /* Converted to rem for consistent spacing */
+  vertical-align: baseline;
+  font-weight: 700;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 2vw; /* vw for dynamic responsiveness */
+  margin-right: 2vw; /* vw for dynamic responsiveness */
+}
+
+.sub212{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  font-weight: 800;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 5vw; /* vw for dynamic responsiveness */
+}
+
+.sub213{
+  font-family: 'Raleway', sans-serif;
+  
+  font-size: 1.5rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  text-align: start; /* Consolidated text-align */
+  padding: 2rem;
+  color: black;
+  text-align: justify;
+
+}
+
+.sub214{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  font-weight: 800;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 5vw; /* vw for dynamic responsiveness */
+}
+
+.sub221{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem; /* Using rem for better scalability */
+  line-height: 4.8rem; /* Converted to rem based on font size */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  margin-top: 8rem; /* Converted to rem for consistent spacing */
+  vertical-align: baseline;
+  font-weight: 700;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 2vw; /* vw for dynamic responsiveness */
+  margin-right: 2vw; /* vw for dynamic responsiveness */
+}
+
+.sub222{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  font-weight: 800;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 5vw; /* vw for dynamic responsiveness */
+}
+
+.sub223{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  text-align: start; /* Consolidated text-align */
+  padding: 2rem;
+  color: black;
+  text-align: justify;
+
+}
+
+.sub224{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  font-weight: 800;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 5vw; /* vw for dynamic responsiveness */
+}
+
+
+.sub231{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem; /* Using rem for better scalability */
+  line-height: 4.8rem; /* Converted to rem based on font size */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  margin-top: 8rem; /* Converted to rem for consistent spacing */
+  vertical-align: baseline;
+  font-weight: 700;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 2vw; /* vw for dynamic responsiveness */
+  margin-right: 2vw; /* vw for dynamic responsiveness */
+}
+
+.sub232{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  font-weight: 800;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 5vw; /* vw for dynamic responsiveness */
+}
+
+.sub233{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  text-align: start; /* Consolidated text-align */
+  padding: 2rem;
+  color: black;
+  text-align: justify;
+}
+
+.sub234{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem; /* Using rem for consistent scaling */
+  line-height: 2rem; /* Adjusted line-height to rem for proportional spacing */
+  letter-spacing: 0.1vw; /* vw for responsiveness based on viewport width */
+  vertical-align: baseline;
+  font-weight: 800;
+  text-align: start; /* Consolidated text-align */
+  color: black;
+  margin-left: 5vw; /* vw for dynamic responsiveness */
+}
+.sub2{
+padding-left: 3%;}
+.Slide7{
+  display: flex;
+  flex-direction: row;
+  background-color: #EBEADF;
+  width: 100vw;
+  height: 250vh;
+}
+
+.Slide8{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #EBEADF;
+  flex-direction: column;
+}
+
+.Slide81{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem; /* 220px / 16px = 13.75rem */
+  color: black;
+  font-weight: 700;
+  padding: 2rem;
+
+  line-height: 7.25rem; /* 180px / 16px = 11.25rem */
+  text-align: start;
+  letter-spacing: normal;
+  padding-bottom: 0rem;
+}
+
+.Slide811{
+ text-align: center;
+  font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 80.4833px;
+    padding: 2rem;
+
+    letter-spacing: 1.016px;
+    vertical-align: baseline;
+    font-weight: 700;
+    text-align: end;
+    color: black;
+    text-align: center;
+}
+
+.Slide812{
+  font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 80.4833px;
+    letter-spacing: 1.016px;
+    vertical-align: baseline;
+    font-weight: 700;
+    
+    text-align: end;
+    color: black;
+    margin-left: 1300px;
+    text-align: start;
+}
+
+.SLide1{
+  font-size: 1rem;
+  line-height: 80.4833px;
+    letter-spacing: 1.016px;
+    vertical-align: baseline;
+    font-weight: 700;
+    text-align: end;
+ padding-top: 3rem;
+    text-align: start;
+    padding: 2rem;
+
+}
+
+
+  
+.Slide6{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+ 
+  background-color: white; 
+  flex-direction: column;   
+} 
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    letter-spacing: 3px;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .Slide2 {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .info2, .img2 {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .title2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .subtitle2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .img2 img {
+    min-height: 300px;
+    max-width: 100%;
+  }
+
+  .Slide3 {
+    height: auto;
+    padding: 2rem 0;
+    flex-direction: column;
+  }
+
+  .ourService {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .Slide4 .subtitle4 {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .Slide4 .subtitle4 > * {
+    width: 90%;
+    padding: 1rem 0;
+  }
+
+  .Slide5 .title11 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .Slide5 .title12 {
+    font-size: 1.5rem;
+  }
+
+  .Slide6title1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .Slide6title2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .Slide6title3 {
+    font-size: 1rem;
+  }
+
+  .Slide7 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sub1, .sub2 {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .sub111, .sub121, .sub131, .sub211, .sub221, .sub231 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100vw;
+    padding-right: 10%;
+
+  }
+
+  .sub113, .sub123, .sub133, .sub213, .sub223, .sub233 {
+    font-size: 1rem;
+    width: 100vw;
+padding-right: 10%;
+  }
+
+  .Slide8 {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .Slide81 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .Slide811 {
+    font-size: 1.2rem;
+  }
+
+  .buttonsGroup {
+    flex-direction: column;
+  }
+
+  Button {
+    font-size: 1rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+
+  .SLide1 {
+    font-size: 1rem;
+  }
+}
+
+.imagejd{
+  vertical-align: baseline;
+margin-right: 1rem;}
+
+
+.navigate2 {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  gap: 2rem;
+  background-color: #192530;
+  padding: 1.5rem 2rem; /* Uniform padding */
+}
+
+/* Remove individual padding-top from these elements */
+.title, .Projects, .aboutUS {
+  padding: 0 !important;
+  margin: 0;
+}
+
+/* Add this to align logo with text */
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Ensure consistent vertical alignment for all items */
+.Projects, .aboutUS {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Match container height */
+}
