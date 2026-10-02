@@ -3,7 +3,6 @@ import ProjectSection from "./ProjectSection";
 import ConsultationSection from "./ConsultationSection";
 import { useProjects } from "./ProjectData"; // Changed import
 import "./Project.css";
-import MainHeader from "./mainHeader";
 import logo from "./assets/logo.png";
 
 import { useNavigate } from "react-router-dom";
